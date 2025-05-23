@@ -100,7 +100,7 @@ app.get('/', (req, res) => {
 });
 
 // update 
-app.patch('/api/update:id', (req, res) => {
+app.patch('/api/update/:id', (req, res) => {
     const { id } = req.params;
     const { content, title, author, description, source, images } = req.body;
 
